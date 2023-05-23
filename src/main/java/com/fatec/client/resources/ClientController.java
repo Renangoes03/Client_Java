@@ -13,18 +13,19 @@ public class ClientController {
 
     @GetMapping("client")
     public Client getClient() {
-        Client c = new Client();
-        c.setId(0);
-        c.setEmail("joao@gmail.com");
-        c.setName("João Silva");
-
-        return c;
-
+        Client c1 = new Client(1,"joao@gmail.com", "Joao Silva");
+        return c1;
     }
 
     @GetMapping("clients")
     public List<Client> getClients() {
         List <Client>clients = new ArrayList<Client>();
+        Client c1 = new Client(1,"joao@gmail.com", "Joao Silva");
+        Client c2 = new Client(2,"maria@gmail.com", "Maria");
+
+        clients.add(c1);
+        clients.add(c2);
+      
         return clients;
 
     }

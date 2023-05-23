@@ -4,6 +4,14 @@ public class Client {
     private int id;
     private String name;
     private String email;
+
+
+
+    public Client(int id, String email, String name) {
+        this.id = id;
+        this.email = email;
+        this.name = name;
+    }
     
     public int getId() {
         return id;
