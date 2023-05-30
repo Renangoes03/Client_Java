@@ -1,5 +1,10 @@
 package com.fatec.client.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "TBL_CLIENT")
 public class Client {
     private int id;
     private String name;
